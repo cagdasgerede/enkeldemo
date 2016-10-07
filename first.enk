@@ -1,0 +1,7 @@
+// this is a comment
+var five=5
+print five
+var dupa="dupa"
+// this is another comment
+// yet another comment
+print dupa

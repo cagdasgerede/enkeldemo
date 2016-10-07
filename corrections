@@ -1,0 +1,26 @@
+http://jakubdziworski.github.io/enkel/2016/03/16/enkel_3_hello_enkel.html
+
+
+
+For "antlr4 Enkel.g4", it says:
+
+warning(131): EnkelOrg.g4:16:13: greedy block ()* contains wildcard; the non-greedy syntax ()*? may be preferred
+
+It wants
+
+STRING : '"'.*'"' ;
+
+to be
+
+STRING : '"'.*?'"' ;
+
+
+
+
+================
+
+http://jakubdziworski.github.io/enkel/2016/03/16/enkel_3_hello_enkel.html
+
+
+Location of ID rule is significant. If we put it before NUMBER or STRING then values cannot be
+recognized correctly. ID must be after all the others (var, print, number, string).
